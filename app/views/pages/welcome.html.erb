@@ -1,10 +1,101 @@
-<!DOCTYPE HTML>
-<HTML>
-    <head>
-    </head>
-    <body>
-    <h1> Bienvenidos </h1>
-    <%= link_to 'pagina1', pages_pagina1_path %>
+<html>
+  <head> <!-- información de la página como tal-->
+    <title>Título</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body> <!-- cuerpo de la página (lo que se muestra)-->
+    <h1> Titulo</h1> <!-- con esto se coloca el titulo principal>
+    <p> <!-- así se colocan los parrafos-->
+      Coloque el <b>parrafo</b> que <strong>desee</strong> <br/> la etiqueta '<br/>' genera un espacio o salto de línea.
+    </p>
+  <hr/>
+    <h2>subtitulo</h2> <!-- con esto se colocan los subtitulos-->
+    <cite> <!-- se coloca el autor de una cita-->
+      Brayan Riascos
+    </cite>
+    <blockquote> <!-- se coloca la cita deseada-->
+      Coloque aqui la cita que desee
+    </blockquote>
+    <p>
+      así se pone un enlace, redirigiendo en la misma página:
+      <a href="https://www.google.com.co/"> Ir a Google </a> </br> <!-- se coloca un enlace-->
+      así se pone un enlace, redirigiendo a una nueva página:
+      <a target="_blank" href="https://www.google.com.co/"> Ir a Google </a> </br> <!-- se coloca un enlace-->
+      para enviar un correo: </br>
+      <a href="mailto: contacto@hotmail.com" title="enviar correo a:"> Enviar mail  </a>
+    </p>
+    <h2>Listas</h2>
+    <p>
+      Desordenada:</br>
+    <ul>
+      <li> <a href="#"> Item 1</a></li>
+      <li> <a href="#"> Item 2</a></li>
+        <ul>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ul>
+      <li>Item 3</li>
+    </ul> </br>
+    Ordenada: </br>
+    <ol>
+      <li> <a href="#"> Item 1</a></li>
+      <li> <a href="#"> Item 2</a></li>
+        <ul>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ul>
+      <li>Item 3</li>
+    </ol>
+  </p>
+<h3> Imagenes </h3>
+<p>
+imagen de directorio en el pc: </br>
+<img src="img/Penguins.jpg"/ alt="Imagen de pingüinos" title="pingüinos feos" width="300" height="300"><br/> </br>
+imagen de internet (hipervinculo): </br> </br>
+<img src="https://www.panorama.com.ve/__export/1513970729032/sites/panorama/img/pitoquito/2017/12/22/pinguinos.jpg_1058132788.jpg"/ alt="Imagen de pingüinos" title="pingüinos feos" width="300" height="300"><br/>
+</p>
+<h4> Tablas </h4>
+<table>
+  <tr>
+    <td>elemento 1<td>
+    <td>elemento 2<td>
+    <td>elemento 3<td>
+  </tr>
+  <tr>
+    <td>elemento 4<td>
+    <td>elemento 5<td>
+    <td>elemento 6<td>
+  </tr>
+  <tr>
+    <td>elemento 7<td>
+    <td>elemento 8<td>
+    <td>elemento 9<td>
+  </tr>
+</table>
 
-    </body>
-</HTML>
+<h5> Formularios </h5>
+  <form>
+    <label for="nombre"> ingrese su nombre: </label>
+    <input type="text" placeholder="Escribe tu nombre" maxlength="5" id="nombre">
+    <input type="password">
+    <input type="email" id="" name="">
+    <br><br>
+
+    <input type="checkbox" id="" name=""> Hombre
+    <input type="checkbox" id="" name=""> Mujer
+    <br><br>
+    <input type="radio" id="" name=""> Hombre Mujer
+<br><br>
+    <input type="button" value="Enviar">
+    <input type="submit">
+    <select name="" id="">
+      <option value="Mexico">Mexico</option>
+      <option value="Colombia">Colombia</option>
+      <input type="color">
+      <input type="range">
+    </select>
+  </form>
+  <h2> producto1 </h2>
+    <%= link_to 'pagina1', pages_pagina1_path %>
+  </body>
+</html>
